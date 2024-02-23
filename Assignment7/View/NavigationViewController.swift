@@ -18,4 +18,9 @@ class NavigationViewController: UIViewController {
         super.viewDidLoad()
         infoLabel.text = "\(selectedPerson ?? "Unknown Person") - \(selectedDate ?? "Unknown Date")"
     }
+    
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

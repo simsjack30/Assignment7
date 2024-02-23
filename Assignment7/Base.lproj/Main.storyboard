@@ -82,12 +82,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRA-PU-cem">
+                                <rect key="frame" x="163" y="767" width="67" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="cY0-9n-T4F" eventType="touchUpInside" id="Sx1-5F-p1d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bVs-un-T1D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mqY-T6-M7E" firstAttribute="centerX" secondItem="WZ8-Mf-iIA" secondAttribute="centerX" id="2Eb-p9-CLV"/>
                             <constraint firstItem="mqY-T6-M7E" firstAttribute="centerY" secondItem="WZ8-Mf-iIA" secondAttribute="centerY" id="Wbi-Ve-Vaw"/>
+                            <constraint firstItem="bVs-un-T1D" firstAttribute="bottom" secondItem="qRA-PU-cem" secondAttribute="bottom" constant="40" id="hSP-5i-9Sh"/>
+                            <constraint firstItem="qRA-PU-cem" firstAttribute="centerX" secondItem="WZ8-Mf-iIA" secondAttribute="centerX" id="vNm-zw-emf"/>
                         </constraints>
                     </view>
                     <connections>
